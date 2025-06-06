@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Film Finder</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400&family=Fredoka+One&family=Questrial&family=Staatliches&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="public/style.css" />
+    <script
+      defer
+      src="https://kit.fontawesome.com/e918d10e90.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="public/fav/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="public/fav/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="public/fav/favicon-16x16.png"
+    />
+    <link rel="icon" type="image/png" href="public/fav/favicon.ico" />
+    <link rel="manifest" href="public/fav/manifest.webmanifest" />
+    <link rel="stylesheet" href="style.css" />
+
+    <script defer src="public/api-key.js"></script>
+    <script defer src="public/helpers.js"></script>
+    <script defer src="public/script.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1 id="appTitle">🍿Film <span class="gradient-text">Finder</span>🍿</h1>
+      <button id="themeToggle" aria-label="Toggle dark/light mode">
+        <i class="fa-solid fa-moon" id="moonIcon"></i>
+        <i class="fa-solid fa-sun" id="sunIcon" style="display: none"></i>
+      </button>
+    </header>
+    <form action="" id="genreForm">
+      <label for="genres">Choose a genre:</label>
+      <select name="genres" id="genres"></select>
+    </form>
+    <button type="submit" id="playBtn">Let's Play!</button>
+    <section class="section">
+      <div id="movieInfo">
+        <div id="moviePoster"></div>
+        <div id="movieText"></div>
+      </div>
+    </section>
+
+    <div id="likeOrDislikeBtns" hidden>
+      <button name="like-button" type="button" id="likeBtn">
+        <i class="fa-solid fa-thumbs-up"></i>
+      </button>
+      <button name="dislike-button" type="button" id="dislikeBtn">
+        <i class="fa-solid fa-thumbs-down"></i>
+      </button>
+    </div>
+  </body>
+
+  <footer class="footer">
+    <p>Built with love 💙 by Illona Addae ✨</p>
+    <p>&copy; 2025 Oceaniccoder. All rights reserved.</p>
+  </footer>
+</html>

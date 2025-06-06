@@ -282,6 +282,10 @@ body.light-mode #movieText {
   #movieText {
     margin-top: 16px; /* Add spacing between poster and text */
   }
+
+  #appTitle {
+    font-size: 40px;
+  }
 }
 
 #playBtn {

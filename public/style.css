@@ -280,11 +280,16 @@ body.light-mode #movieText {
   }
 
   #movieText {
-    margin-top: 16px; /* Add spacing between poster and text */
+    margin-top: 16px;
   }
 
   #appTitle {
     font-size: 40px;
+  }
+
+  form label,
+  #genreForm label {
+    font-size: 20px !important;
   }
 }
 
